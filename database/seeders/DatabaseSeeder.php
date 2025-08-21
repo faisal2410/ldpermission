@@ -28,8 +28,9 @@ class DatabaseSeeder extends Seeder
         ])->assignRole('User');
 
         $this->call([
-            TaskSeeder::class,
             RoleAndPermissionSeeder::class,
+            TaskSeeder::class,
+            UserSeeder::class,
 
         ]);
     }
